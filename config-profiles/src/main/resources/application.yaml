@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-profiles
+  config:
+    import: optional:file:.env[.properties]
+#  profiles:
+#    active: prod
+
+#build:
+#  id: 1010
+#  version: 10.2.3
+#  name: "application build"
+#  type: "app build"
+
+build:
+  id: ${ID}
+  version: ${VERSION}
+  name: ${NAME}
+
